@@ -14,7 +14,7 @@ public class Motorino {
 		this.antifurto = antifurto;
 	}
 
-	public double getVelocita() {
+	public float getVelocita() {
 		return velocita;
 	}
 
