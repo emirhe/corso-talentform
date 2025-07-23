@@ -31,7 +31,7 @@ public class MainProgramma {
 
 		System.out.println("----------------------------------------");
 
-		System.out.println("Il Totale del preventivo è: €" + webApp.costoProgetto());
+		System.out.println("Totale preventivo: €" + webApp.costoProgetto());
 	}
 
 }
