@@ -12,7 +12,7 @@ public class MainImpiegato {
 		System.out.println("Ore straordinario: " + impiegato.straordinario);
 
 		System.out.println("-------------------------");
-		System.out.println("Totale pagamento del mese con extraordinario: €" + impiegato.totaleExtraordinario(12));
+		System.out.println("Totale pagamento del mese con extraordinario: €" + impiegato.paga(12));
 
 	}
 

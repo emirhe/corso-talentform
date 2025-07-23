@@ -16,7 +16,7 @@ public class Impiegato {
 		return stipendio;
 	}
 
-	public double totaleExtraordinario(double costoOraStraordinario) {
+	public double paga(double costoOraStraordinario) {
 		return stipendio + (straordinario * costoOraStraordinario);
 	}
 

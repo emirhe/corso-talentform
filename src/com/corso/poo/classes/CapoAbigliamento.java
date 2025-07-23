@@ -6,7 +6,6 @@ public class CapoAbigliamento {
 	public double costo;
 
 	public CapoAbigliamento(String marca, String modello, double costo) {
-		super();
 		this.marca = marca;
 		this.modello = modello;
 		this.costo = costo;
