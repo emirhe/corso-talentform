@@ -1,4 +1,4 @@
-package com.corso.poo.collections;
+package com.corso.poo.collections.lists;
 
 import java.util.ArrayList;
 

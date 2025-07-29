@@ -1,6 +1,7 @@
-package com.corso.poo.collections;
+package com.corso.poo.collections.lists;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 
 public class Studente {
@@ -68,7 +69,7 @@ public class Studente {
 		// Metodo 2
 
 		listStudenti.add(new Studente("Jorge", "Perez", 36));
-		listStudenti.add(new Studente("Sara", "Salinas", 18));
+		listStudenti.add(new Studente("Sara", "Salinas", 32));
 		listStudenti.add(new Studente("Monica", "Gonzalez", 20));
 
 		System.out.println("Dopo nel array list ci cono: " + listStudenti.size() + " studenti");
@@ -104,6 +105,10 @@ public class Studente {
 		listStudenti.forEach(System.out::println); // method reference: solo sirve cuando ya existe un metodo que puedes
 													// usar tal cual
 
+		System.out.println("---------------------");
+		// Trova e stampa lo studente con età minore.
+		Studente minore = Collections.min(listStudenti, Comparator.comparing(Studente::getEta));
+		System.out.println("Studenti con la età minore è: " + minore);
 	}
 
 }

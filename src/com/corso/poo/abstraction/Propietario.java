@@ -1,6 +1,6 @@
 package com.corso.poo.abstraction;
 
-public abstract class Propietario {
+public class Propietario {
 
 	String nome;
 	String codiceF;
@@ -17,8 +17,6 @@ public abstract class Propietario {
 		this.email = email;
 		this.eta = eta;
 	}
-
-	public abstract void maggioreEta();
 
 	public String getNome() {
 		return nome;
@@ -50,6 +48,16 @@ public abstract class Propietario {
 
 	public void setEta(int eta) {
 		this.eta = eta;
+	}
+
+	public void magiorenne(int eta) {
+		if (eta >= 18) {
+			System.out.println("Può avere il vehicolo");
+			;
+		} else {
+			System.out.println("Deve essere maggiorenne per aver il veicolo");
+		}
+
 	}
 
 }

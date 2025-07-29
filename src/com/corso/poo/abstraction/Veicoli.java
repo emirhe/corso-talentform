@@ -2,6 +2,9 @@ package com.corso.poo.abstraction;
 
 public abstract class Veicoli {
 
+	public String tipologia;
+	public String modelo;
+	public String marchio;
 	public String targa;
 	public String colore;
 	public int annoInmatricolazion;
@@ -10,12 +13,15 @@ public abstract class Veicoli {
 	public Veicoli() {
 	}
 
-	public Veicoli(String targa, String colore, int annoInmatricolazion, Propietario propVeicolo) {
-		super();
+	public Veicoli(String tipologia, String modelo, String marchio, String targa, String colore,
+			int annoInmatricolazion, Propietario propVeicolo) {
+		this.tipologia = tipologia;
+		this.modelo = modelo;
+		this.marchio = marchio;
 		this.targa = targa;
 		this.colore = colore;
 		this.annoInmatricolazion = annoInmatricolazion;
-		this.propVeicolo = propVeicolo;
+		this.propVeicolo = new Propietario();
 	}
 
 	public abstract void run();
@@ -50,6 +56,30 @@ public abstract class Veicoli {
 
 	public void setPropVeicolo(Propietario propVeicolo) {
 		this.propVeicolo = propVeicolo;
+	}
+
+	public String getTipologia() {
+		return tipologia;
+	}
+
+	public void setTipologia(String tipologia) {
+		this.tipologia = tipologia;
+	}
+
+	public String getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+	public String getMarchio() {
+		return marchio;
+	}
+
+	public void setMarchio(String marchio) {
+		this.marchio = marchio;
 	}
 
 }

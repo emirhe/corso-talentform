@@ -1,4 +1,4 @@
-package com.corso.poo.collections;
+package com.corso.poo.collections.lists;
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
@@ -31,6 +31,15 @@ public class ExcerciseUnioneListe {
 
 		List<String> lista = new ArrayList<>(List.of("Anna", "Anna", "Jose", "Laura", "Laura"));
 		System.out.println(lista);
+
+		int cont = 0;
+		for (String i : lista) {
+			if (i.equals("Anna")) {
+				cont++;
+			}
+		}
+
+		System.out.println("Nella lista ci cono " + cont + " nomi Anna");
 
 		Set<String> listaSenzaDuplicati = new LinkedHashSet<>(lista);
 
