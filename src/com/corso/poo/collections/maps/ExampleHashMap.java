@@ -6,19 +6,37 @@ public class ExampleHashMap {
 
 	public static void main(String[] args) {
 
-		HashMap<String, Integer> gruppoMap = new HashMap<>();
+		HashMap<String, String> paises = new HashMap<>();
+		paises.put("MX", "México");
+		paises.put("IT", "Italia");
+		paises.put("FR", "Francia");
 
-		gruppoMap.put("Cuaderno", 222);
-		gruppoMap.put("Libro", 232);
-		gruppoMap.put("Lapiz", 242);
+		System.out.println(paises.get("IT")); // Italia
 
-		System.out.println(gruppoMap.size());
-		System.out.println(gruppoMap.containsKey("Revista"));
+		// Recorrer por claves
+		for (String clave : paises.keySet()) {
+			System.out.println("Clave: " + clave);
+		}
 
-		System.out.println(gruppoMap.get("Libro"));
+		// Recorrer por valores
+		for (String valor : paises.values()) {
+			System.out.println("Valor: " + valor);
+		}
 
-		System.out.println(gruppoMap.toString());
+		// Recorrer por pares clave-valor
+		for (HashMap.Entry<String, String> entrada : paises.entrySet()) {
+			System.out.println(entrada.getKey() + " -> " + entrada.getValue());
+		}
 
+		// Verificar si existe
+		if (paises.containsKey("FR")) {
+			System.out.println("Sí contiene a Francia");
+		}
+
+		// Eliminar
+		paises.remove("MX");
+
+		System.out.println(paises);
 	}
 
 }
