@@ -1,13 +1,13 @@
-package com.corso.spring;
+package com.corso.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CorsoSpringApplication {
+public class SpringRestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CorsoSpringApplication.class, args);
+		SpringApplication.run(SpringRestApplication.class, args);
 	}
 
 }
